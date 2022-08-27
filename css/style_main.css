@@ -1,0 +1,161 @@
+* {
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    background-color: #507299;
+    position: sticky;
+    top: 0px;
+}
+
+.header-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-size: large;
+    color: white;
+}
+
+.logo {
+    width: 21px;
+    height: 21px;
+}
+
+content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-menu {
+    width: 16.5vw;
+    background-color: #6788AE;
+    padding-top: 30px;
+    text-indent: 10px;
+    line-height: 2.6em;
+    display: block;
+}
+
+.cat-display {
+    background-color: white;
+    width: 68vw;
+    height: fit-content;
+    margin-top: 30px;
+    margin-left: 19px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid #E5E5E5;
+}
+
+.cat {
+    width: 300px;
+}
+
+.cat-welcome {
+    margin-top: 30px;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+@media (max-width: 1100px) {
+    .cat-welcome>img {
+        width: 0px;
+    }
+    .cat-welcome {
+        display: none;
+    }
+    .cat-display {
+        width: 70vw;
+        margin-right: 19px;
+    }
+    .left-menu {
+        width: 30vw;
+    }
+}
+
+.footer-box {
+    flex-shrink: 0;
+    background-color: white;
+    width: 100vw;
+    height: 40px;
+}
+
+@media (min-height: 451px) {
+    .cat-footer {
+        height: 145px;
+        position: relative;
+        bottom: 55px;
+        right: 20px;
+    }
+    .footer-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media (max-height: 450px) {
+    .cat-footer {
+        visibility: hidden;
+        width: 0px;
+    }
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text {
+        visibility: hidden;
+    }
+    .footer-text::after {
+        content: "Lonely Text";
+        visibility: visible;
+    }
+}
+
+p {
+    color: gray;
+}
+
+@media (max-width: 500px) {
+    .left-menu {
+        display: none;
+    }
+    .cat-display {
+        width: 500px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 451px) {
+    body {
+        overflow-x: hidden;
+    }
+}

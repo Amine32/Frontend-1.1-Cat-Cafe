@@ -1,0 +1,32 @@
+*{
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    line-height: 1.3em;
+}
+
+.body {
+    background-color:#EDEEF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #45A3BF;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    height: 56px;
+    width: 108px;
+}
+
+a{
+    text-decoration: none;
+    font-size: x-large;
+}   
+
+a:visited{
+    color: white;
+}
